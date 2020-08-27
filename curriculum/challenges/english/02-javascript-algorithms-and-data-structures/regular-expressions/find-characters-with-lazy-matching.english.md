@@ -58,7 +58,7 @@ let result = text.match(myRegex);
 
 ```js
 let text = "<h1>Winter is coming</h1>";
-let myRegex = /<.*?>/; // Change this line
+let myRegex = /<[^<>]+?>/g; // Change this line
 let result = text.match(myRegex);
 ```
 
